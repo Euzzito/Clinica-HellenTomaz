@@ -782,7 +782,12 @@ nav ul li a:hover {
 
 /* FORMULÁRIO */
 
-.formulario {
+
+/* ============================= */
+/* WHATSAPP */
+/* ============================= */
+
+.contato-acoes {
     padding: 40px;
 
     background-color: var(--bege);
@@ -790,13 +795,98 @@ nav ul li a:hover {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.20);
 }
 
-.formulario h3 {
+.whatsapp-box {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.whatsapp-icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--marrom-escuro);
+
+    color: var(--dourado);
+
+    border: 1px solid var(--dourado);
+
+    font-size: 1.4rem;
+}
+
+.whatsapp-box h3 {
     color: var(--marrom-escuro);
 
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 
-    margin-bottom: 25px;
+    margin-bottom: 8px;
 }
+
+.whatsapp-box p {
+    color: #666;
+
+    line-height: 1.6;
+
+    font-size: 0.9rem;
+}
+
+
+
+.btn-whatsapp {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 16px 25px;
+
+    background-color: #25D366;
+
+    color: var(--branco);
+
+    border: none;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    transition: 0.3s ease;
+}
+
+.btn-whatsapp span {
+    color: var(--branco);
+
+    font-size: 1.2rem;
+
+    transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20b957;
+
+    color: var(--branco);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+.btn-whatsapp:hover span {
+    color: var(--branco);
+
+    transform: translateX(5px);
+}
+
 
 .campo {
     margin-bottom: 18px;
