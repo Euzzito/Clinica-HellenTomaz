@@ -1,47 +1,424 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./src/css/style.css">
+
     <title>Clínica Hellen Tomaz</title>
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <h1 class="logo">Clínica <span>Hellen Tomaz</span></h1>
+
+        <a href="#inicio" class="logo">
+            <span>Clínica</span>
+            Hellen Tomaz
+        </a>
+
         <div class="menu-hamburguer" id="menu-icone">
             <span></span>
             <span></span>
             <span></span>
         </div>
+
         <nav id="nav-menu">
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#tratamentos">Tratamentos</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
     </header>
 
-    <section id="banner">
-        <img id="imgBanner">
-        <div class="banner-text">
-            <h2>
-                Terapia, Estética<br>
-                e Bem-Estar
-            </h2>
+
+    <!-- BANNER / SLIDESHOW -->
+    <main id="inicio">
+
+        <section class="banner">
+
+            <div class="slides">
+
+                <div class="slide slide-1 active">
+                    <div class="banner-content">
+                        <span class="banner-tag">Cuidado natural</span>
+
+                        <h1>
+                            Terapia, Estética<br>
+                            e <strong>Bem-Estar</strong>
+                        </h1>
+
+                        <p>
+                            Terapias que cuidam da mente, do corpo
+                            e das emoções simultaneamente.
+                        </p>
+
+                        <a href="#tratamentos" class="btn">
+                            Conheça nossos tratamentos
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="slide slide-2">
+                    <div class="banner-content">
+                        <span class="banner-tag">Equilíbrio</span>
+
+                        <h1>
+                            Cuide de você<br>
+                            de forma <strong>natural</strong>
+                        </h1>
+
+                        <p>
+                            Encontre momentos de equilíbrio,
+                            relaxamento e conexão.
+                        </p>
+
+                        <a href="#tratamentos" class="btn">
+                            Conheça nossos tratamentos
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="slide slide-3">
+                    <div class="banner-content">
+                        <span class="banner-tag">Seu momento</span>
+
+                        <h1>
+                            Seu bem-estar<br>
+                            merece <strong>atenção</strong>
+                        </h1>
+
+                        <p>
+                            Um espaço pensado para proporcionar
+                            cuidado, tranquilidade e acolhimento.
+                        </p>
+
+                        <a href="#contato" class="btn">
+                            Entre em contato
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button class="slide-btn prev" id="prev">
+                &#10094;
+            </button>
+
+            <button class="slide-btn next" id="next">
+                &#10095;
+            </button>
+
+
+            <div class="indicadores" id="indicadores">
+                <span class="indicador active"></span>
+                <span class="indicador"></span>
+                <span class="indicador"></span>
+            </div>
+
+        </section>
+
+
+        <!-- TRATAMENTOS -->
+        <section class="section tratamentos" id="tratamentos">
+
+            <div class="section-title">
+                <span>O que oferecemos</span>
+
+                <h2>
+                    Tratamentos para cuidar
+                    <strong>de você</strong>
+                </h2>
+
+                <p>
+                    Técnicas e terapias pensadas para promover
+                    equilíbrio, relaxamento e bem-estar.
+                </p>
+            </div>
+
+
+            <div class="tratamentos-grid">
+
+                <article class="tratamento-card">
+                    <div class="card-icon">✦</div>
+
+                    <h3>Terapias Naturais</h3>
+
+                    <p>
+                        Práticas voltadas ao equilíbrio do corpo,
+                        da mente e das emoções.
+                    </p>
+
+                    <a href="#contato">Saiba mais →</a>
+                </article>
+
+
+                <article class="tratamento-card destaque">
+                    <div class="card-icon">✧</div>
+
+                    <h3>Estética</h3>
+
+                    <p>
+                        Cuidados estéticos para valorizar sua
+                        beleza e proporcionar bem-estar.
+                    </p>
+
+                    <a href="#contato">Saiba mais →</a>
+                </article>
+
+
+                <article class="tratamento-card">
+                    <div class="card-icon">♡</div>
+
+                    <h3>Relaxamento</h3>
+
+                    <p>
+                        Momentos de tranquilidade para aliviar
+                        a tensão e desacelerar.
+                    </p>
+
+                    <a href="#contato">Saiba mais →</a>
+                </article>
+
+
+                <article class="tratamento-card">
+                    <div class="card-icon">☼</div>
+
+                    <h3>Bem-Estar</h3>
+
+                    <p>
+                        Experiências que ajudam você a dedicar
+                        mais atenção ao seu próprio cuidado.
+                    </p>
+
+                    <a href="#contato">Saiba mais →</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRASE / DESTAQUE -->
+        <section class="frase">
+
+            <div>
+                <span>Um momento para você</span>
+
+                <h2>
+                    Cuidar de si também
+                    é uma forma de amor.
+                </h2>
+
+                <p>
+                    Permita-se desacelerar, respirar e cuidar
+                    do que realmente importa.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="section produtos" id="produtos">
+
+            <div class="section-title">
+                <span>Para o seu cuidado</span>
+
+                <h2>
+                    Conheça nossos
+                    <strong>produtos</strong>
+                </h2>
+
+                <p>
+                    Produtos selecionados para complementar
+                    sua rotina de autocuidado.
+                </p>
+            </div>
+
+
+            <div class="produtos-grid">
+
+                <article class="produto-card">
+                    <div class="produto-img produto-1">
+                        <span>Natural</span>
+                    </div>
+
+                    <div class="produto-info">
+                        <h3>Óleos Naturais</h3>
+                        <p>Para momentos de relaxamento e cuidado.</p>
+                        <a href="#contato">Consultar →</a>
+                    </div>
+                </article>
+
+
+                <article class="produto-card">
+                    <div class="produto-img produto-2">
+                        <span>Bem-estar</span>
+                    </div>
+
+                    <div class="produto-info">
+                        <h3>Aromas</h3>
+                        <p>Fragrâncias para criar ambientes agradáveis.</p>
+                        <a href="#contato">Consultar →</a>
+                    </div>
+                </article>
+
+
+                <article class="produto-card">
+                    <div class="produto-img produto-3">
+                        <span>Cuidado</span>
+                    </div>
+
+                    <div class="produto-info">
+                        <h3>Cuidados Corporais</h3>
+                        <p>Produtos para complementar sua rotina.</p>
+                        <a href="#contato">Consultar →</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section class="contato" id="contato">
+
+            <div class="contato-container">
+
+                <div class="contato-texto">
+                    <span>Fale conosco</span>
+
+                    <h2>
+                        Vamos cuidar de
+                        <strong>você?</strong>
+                    </h2>
+
+                    <p>
+                        Entre em contato para conhecer nossos
+                        tratamentos, produtos e horários disponíveis.
+                    </p>
+
+                    <div class="contato-info">
+
+                        <div>
+                            <strong>Telefone</strong>
+                            <p>(11) 00000-0000</p>
+                        </div>
+
+                        <div>
+                            <strong>Atendimento</strong>
+                            <p>Segunda a sexta-feira</p>
+                        </div>
+
+                        <div>
+                            <strong>Localização</strong>
+                            <p>São Paulo - SP</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <form class="formulario">
+
+                    <h3>Entre em contato</h3>
+
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Seu nome"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="seuemail@email.com"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            rows="5"
+                            placeholder="Como podemos ajudar?"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <h2>Clínica Hellen Tomaz</h2>
+                <p>
+                    Terapia, Estética e Bem-Estar.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Navegação</h3>
+
+                <a href="#inicio">Início</a>
+                <a href="#tratamentos">Tratamentos</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Contato</h3>
+
+                <p>(11) 00000-0000</p>
+                <p>São Paulo - SP</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
             <p>
-                Terapias quem cuidam da mente, do corpo e das emoções simultaneamente
+                © 2026 Clínica Hellen Tomaz. Todos os direitos reservados.
             </p>
         </div>
-    </section>
-    
+
+    </footer>
+
+
+    <script src="./src/js/script.js"></script>
+
 </body>
-
-<footer>
-
-</footer>
 
 </html>
